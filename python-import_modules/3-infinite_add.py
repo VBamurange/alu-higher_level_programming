@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from sys import argc
+from sys import argv
 
 if __name__ == "__main__":
     num_of_args = len(argv) - 1
