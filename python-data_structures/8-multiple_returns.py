@@ -4,4 +4,4 @@ def multiple_returns(sentence):
         _tuple = (0, None)
     else:
         _tuple = (len(sentence), sentence[0])
-    return _tuple
+    print("Length: {:d} - First character: {}".format(len(sentence), sentence[0]))
