@@ -9,4 +9,3 @@ def add_tuple(tuple_a=(), tuple_b=()):
     value2 = tuple_a[1] + tuple_b[1]
     tuple_d = (value1, value2)
     return(tuple_d)
-print(tuple_add((10, 5), (4, 6)))
