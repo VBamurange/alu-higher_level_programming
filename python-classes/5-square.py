@@ -4,8 +4,11 @@
 
 class Square:
     """we are going to initialize the size attribute"""
+
+
     def __init__(self, size=0):
         """attribute size is equating to 0"""
+
         self.size = size
 
     @property
