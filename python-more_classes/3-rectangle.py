@@ -44,16 +44,18 @@ class Rectangle:
         """get area"""
         if self.__width == 0 or self.__height == 0:
             return (0)
-        return ((self.__width * 2) + (self.__height * 2))
+        else:
+            return 2 * (self.__height + self.__width)
 
-   def __str__(self):
-       """represent the string again"""
-       if self.__width == 0 or self.__height == 0:
-           return ("")
+    def __str__(self):
+        """using # in printing"""
+        if self.__width == 0 or self.___height == 0:
+            return ''
+        else:
+            rect = ''
+            for i in range(self.__height):
+                for x in range(self.__width):
+                    rect = rect + '#'
 
-       rect = []
-       for i in range(self.__height):
-           [rect.append('#') for j in range(self.__width)]
-           if i != self.__height - 1:
-               rect.append("\n")
-      return ("".join(rect))
+                rect += '\n'
+            return rect[:-1]
