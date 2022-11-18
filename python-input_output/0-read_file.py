@@ -6,4 +6,4 @@ def read_file(filename=""):
     """function"""
     with open(filename) as Q:
         glass = Q.read()
-        print(glass)
+        print(glass, end="")
