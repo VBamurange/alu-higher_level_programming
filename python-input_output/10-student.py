@@ -16,10 +16,10 @@ class Student:
         if attrs is None or type(attrs) != list:
             return self.__dict__
         else:
-            y = {}
-            for w in attrs:
-                if type(w) != str:
+            x = {}
+            for y in attrs:
+                if type(y) != str:
                     return self.__dict__
-                if w in self.__dict__.keys():
-                    y[w] = self.__dict__[w]
-                return y
+                if y in self.__dict__.keys():
+                    x[y] = self.__dict__[elem]
+            return x
