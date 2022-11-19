@@ -4,6 +4,8 @@
 
 def print_stats(size, status_codes):
     """function to print"""
+
+
     print("File size: {}".format(size))
     for key in sorted(status_codes):
         printprint("{}: {}".format(key, status_codes[key]))
