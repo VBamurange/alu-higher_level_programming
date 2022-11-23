@@ -3,7 +3,7 @@
 
 
 import requests
-from  requests.auth import HTTPBasicAuth
+from requests.auth import HTTPBasicAuth
 import sys
 
 
@@ -12,6 +12,6 @@ if __name__ == "__main__":
     user = sys.argv[1]
     y = sys.argv[2]
     z = HTTPBasicAuth(username=user, password=y)
-    w = requests.get(x, v=z)
+    w = requests.get(x, auth=z)
     u = w.json()
     print(u.get('id'))
