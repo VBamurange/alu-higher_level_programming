@@ -6,6 +6,7 @@ import requests
 from  requests.auth import HTTPBasicAuth
 import sys
 
+if __name__ == "__main__":
 
 x = 'https://api.github.com/user'
 user = sys.argv[1]
