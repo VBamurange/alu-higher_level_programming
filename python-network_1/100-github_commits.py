@@ -12,6 +12,6 @@ if __name__ == "__main__":
         x = requests.get(url)
         y = x.json()
         for i in range(10):
-            print("{}: {}".format(x[i]["sha"],x[i]["commit"]["author"]["name"]))
+            print("{}: {}".format(y[i]["sha"],y[i]["commit"]["author"]["name"]))
     except IndexError:
         pass
