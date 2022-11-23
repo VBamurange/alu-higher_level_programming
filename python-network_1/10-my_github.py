@@ -6,12 +6,13 @@ import requests
 from  requests.auth import HTTPBasicAuth
 import sys
 
+
 if __name__ == "__main__":
 
 x = 'https://api.github.com/user'
 user = sys.argv[1]
 y = sys.argv[2]
-z = HTTPBaicAuth(username=user, password=y)
+z = HTTPBasicAuth(username=user, password=y)
 w = requests.get(x, v=z)
 u = w.json()
 print(u.get('id'))
