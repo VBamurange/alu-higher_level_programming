@@ -3,11 +3,12 @@
 
 
 def text_indentation(text):
-    """function identation"""
+    """function for the identation"""
     if not isinstance(text, str):
         raise TypeError("text must be a string")
 
     i = 0
+    
     while i < len(text) and text[i] == ' ':
         i += 1
 
