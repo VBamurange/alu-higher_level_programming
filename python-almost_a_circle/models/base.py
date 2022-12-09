@@ -57,14 +57,14 @@ class Base:
             dummy = cls(3, 2)
         if cls.__name__ == "Square":
             dummy = cls(3)
-        dummy.updaate(**dictionary)
+        dummy.update(**dictionary)
         return dummy
 
     @classmethod
     def load_from_file(cls):
         """load from file function"""
         try:
-            with open(cls.__name__ + "json", "r") as doc:
+            with open(cls.__name__ + ".json", "r") as doc:
                 document = doc.read()
         except FileNotFoundError:
             return []
