@@ -14,20 +14,24 @@ class Square(Rectangle):
     @property
     def size(self):
         """size function"""
+
         return self.width
 
     @size.setter
     def size(self, value):
         """set size"""
+
         self.width = value
         self.height = value
 
     def __str__(self):
         """string representation"""
+
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.size}"
 
     def update(self, *args, **kwargs):
         """update function"""
+
         if len(args) != 0:
             try:
                 self.id = args[0]
@@ -57,4 +61,5 @@ class Square(Rectangle):
 
         def to_dictionary(self):
             """dictionary function"""
+            
             return {'id': self.id, 'size': self.size, 'x': self.x, 'y': self.y}
