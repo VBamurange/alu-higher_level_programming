@@ -16,6 +16,6 @@ if __name__ == "__main__":
     session = Session()
     x = '%a%'
     y = session.query(State).filter(State.name.like(x)).order_by(State.id)
-    for j in states:
+    for j in y:
         print("{}: {}".format(j.id, j.name))
     session.close()
