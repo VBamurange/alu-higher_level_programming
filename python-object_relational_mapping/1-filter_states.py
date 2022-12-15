@@ -6,7 +6,8 @@ import MySQLdb
 from sys import argv
 
 if __name__ == "__main__":
-    db = MySQLdb.connect(host="localhost", port=3306, user=argv[0], passwd=argv[1], db=argv[2])
+    db = MySQLdb.connect(host="localhost", port=3306, user=argv[0],
+                         passwd=argv[1], db=argv[2])
     cursor = db.cursor()
     cursor.executre("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
     my_list = cursor.fetchall()
