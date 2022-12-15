@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """all states via sqlalchelmy"""
 
-
 import sqlalchemy
 from sqlalchemy import create create_engine
 from sqlalchemy.orm import sessionmaker
