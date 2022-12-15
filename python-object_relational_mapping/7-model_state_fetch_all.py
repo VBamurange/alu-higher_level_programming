@@ -2,7 +2,7 @@
 """all states via sqlalchelmy"""
 
 import sqlalchemy
-from sqlalchemy import create create_engine
+from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sys import argv
 from model_state import Base, State
