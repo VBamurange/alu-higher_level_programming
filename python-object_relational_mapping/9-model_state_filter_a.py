@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""contains `a`"""
+"""contains a"""
 
 import sqlalchemy
 from sqlalchemy import create_engine
@@ -14,8 +14,8 @@ if __name__ == "__main__":
     Base.metadata.create_all(eng)
     Session = sessionmaker(bind=eng)
     session = Session()
-    x = '%a%'
-    states = session.query(State).filter(State.name.like(x)).order_by(State.id)
+    s = '%a%'
+    states = session.query(State).filter(State.name.like(s)).order_by(State.id)
     for state in states
         print("{}: {}".format(state.id, state.name))
     session.close()
