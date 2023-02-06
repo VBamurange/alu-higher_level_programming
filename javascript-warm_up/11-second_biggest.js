@@ -2,7 +2,7 @@
 const x = process.argv.length;
 const y = [];
 
-switch(x) {
+switch (x) {
   case 2:
   case 3:
     console.log(0);
