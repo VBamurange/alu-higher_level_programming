@@ -6,7 +6,7 @@ if (isNaN(size)) {
   for (let i = 0; i < size; i++) {
     let x = '';
     for (let j = 0; j < size; j++) {
-     x += 'X';
+      x += 'X';
     }
     console.log(x);
   }
